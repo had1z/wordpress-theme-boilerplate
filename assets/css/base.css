@@ -1,0 +1,27 @@
+html {
+    font-size: 15px;
+}
+
+body {
+    direction: rtl;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: 0;
+}
+
+.ltr {
+    direction: ltr;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+.hz-display-none {
+    display: none;
+}
