@@ -1,0 +1,20 @@
+{
+  "name": "hztheme",
+  "version": "1.0.0",
+  "description": "A basic wordpress theme boilerplate by Hadi Zahedian",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/had1z/wordpress-theme-boilerplate.git"
+  },
+  "keywords": ["Wordpress", "Theme", "UIKit Theme"],
+  "author": "Hadi Zahedian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/had1z/wordpress-theme-boilerplate/issues"
+  },
+  "homepage": "https://github.com/had1z/wordpress-theme-boilerplate#readme"
+}
