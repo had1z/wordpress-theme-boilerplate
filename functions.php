@@ -1,6 +1,10 @@
 <?php
 
-add_action( 'init', 'hztheme_register_menus' );
+require_once 'includes/menu.php';
+require_once 'includes/post-type.php';
+require_once 'includes/post-meta.php';
+require_once 'includes/taxonomy.php';
+
 add_action( 'after_setup_theme', 'hztheme_theme_support' );
 add_action( 'wp_enqueue_scripts', 'hztheme_register_styles' );
 add_action( 'wp_enqueue_scripts', 'hztheme_register_scripts' );
@@ -44,12 +48,4 @@ function hztheme_register_scripts() {
 function hztheme_remove_extra_scripts() {
     wp_dequeue_style( 'wp-block-library' );
     wp_dequeue_style( 'wp-block-library-theme' );
-}
-
-function hztheme_register_menus() {
-    $locations = array(
-        'primary' => __( 'Primary Menu', 'hztheme' )
-    );
-
-    register_nav_menus( $locations );
 }
