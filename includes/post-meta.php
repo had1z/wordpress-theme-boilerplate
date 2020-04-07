@@ -25,7 +25,7 @@ function hz_save_posts( $post_id, $post ) {
         return $post_id;
     }
 
-    if ( defined( 'DOING_AUTOSAVE' && DOING_AUTOSAVE ) ) {
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
         return $post_id;
     }
 
