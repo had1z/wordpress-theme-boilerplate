@@ -1,5 +1,6 @@
 <?php
 
+require_once __DIR__ . '/includes/template-functions.php';
 require_once __DIR__ . '/includes/menu.php';
 require_once __DIR__ . '/includes/post-meta.php';
 require_once __DIR__ . '/includes/post-type.php';
