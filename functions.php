@@ -1,9 +1,9 @@
 <?php
 
-require_once 'includes/menu.php';
-require_once 'includes/post-type.php';
-require_once 'includes/post-meta.php';
-require_once 'includes/taxonomy.php';
+require_once __DIR__ . '/includes/menu.php';
+require_once __DIR__ . '/includes/post-meta.php';
+require_once __DIR__ . '/includes/post-type.php';
+require_once __DIR__ . '/includes/taxonomy.php';
 
 add_action( 'after_setup_theme', 'hz_theme_support' );
 add_action( 'wp_enqueue_scripts', 'hz_register_styles' );
