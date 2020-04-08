@@ -25,3 +25,114 @@ a:focus {
 .hz-display-none {
     display: none;
 }
+
+.hz-font-size-1-3 {
+    font-size: 1.3rem;
+}
+
+.hz-border {
+    border: 1px solid #e5e5e5;
+}
+
+.hz-border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.hz-border-2,
+hr.hz-border-2:after {
+    border-width: 2px;
+}
+
+.hz-border-3 {
+    border-width: 3px;
+}
+
+.hz-border-brand-color,
+hr.hz-border-brand-color:after {
+    border-color: #0054a5;
+}
+
+.hz-text-default {
+    color: #ffffff;
+}
+
+.hz-background-transparent {
+    background-color: transparent;
+}
+
+.hz-background-transparent + .uk-sticky-placeholder {
+    display: none;
+}
+
+.hz-button-white {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #e5e5e5;
+}
+
+.hz-dropdown-auto-width {
+    min-width: auto;
+}
+
+.hz-dropdown-thin {
+    padding: 16px;
+}
+
+.uk-divider-vertical.hz-divider-vertical-1-2 {
+    height: 50px;
+}
+
+.uk-offcanvas-bar .uk-nav-default {
+    font-size: 1.1rem;
+}
+
+ul.uk-nav-sub {
+    padding: 5px 25px 5px 0;
+}
+
+@media (min-width: 640px) {
+    .hz-padding-remove-horizontal\@s {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 960px) {
+    .uk-hidden.uk-visible\@m {
+        display: initial !important;
+    }
+
+    .hz-text-default\@m {
+        color: #ffffff !important;
+    }
+
+    .hz-background-transparent\@m {
+        background-color: transparent;
+    }
+
+    .hz-background-transparent\@m + .uk-sticky-placeholder {
+        display: none;
+    }
+
+    #main-navigation.uk-sticky-below {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
+    }
+
+    #main-navigation.uk-sticky-below .hz-hidden-stick {
+        display: none !important;
+    }
+
+    #main-navigation.uk-sticky-below #main-navigation-row {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    #main-navigation.uk-sticky-below #main-navigation-row > div:first-child {
+        flex: 1;
+    }
+
+    #main-navigation.uk-sticky-below #main-navigation-row > div:first-child > .uk-flex > .uk-width-1-2 {
+        width: 100%;
+    }
+}
