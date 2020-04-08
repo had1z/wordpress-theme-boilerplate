@@ -113,26 +113,4 @@ ul.uk-nav-sub {
     .hz-background-transparent\@m + .uk-sticky-placeholder {
         display: none;
     }
-
-    #main-navigation.uk-sticky-below {
-        box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
-    }
-
-    #main-navigation.uk-sticky-below .hz-hidden-stick {
-        display: none !important;
-    }
-
-    #main-navigation.uk-sticky-below #main-navigation-row {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
-
-    #main-navigation.uk-sticky-below #main-navigation-row > div:first-child {
-        flex: 1;
-    }
-
-    #main-navigation.uk-sticky-below #main-navigation-row > div:first-child > .uk-flex > .uk-width-1-2 {
-        width: 100%;
-    }
 }
