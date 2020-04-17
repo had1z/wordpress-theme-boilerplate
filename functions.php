@@ -10,6 +10,7 @@ add_action( 'after_setup_theme', 'hz_theme_support' );
 add_action( 'wp_enqueue_scripts', 'hz_register_styles' );
 add_action( 'wp_enqueue_scripts', 'hz_register_scripts' );
 add_action( 'wp_enqueue_scripts', 'hz_remove_extra_scripts' );
+add_action( 'admin_enqueue_scripts', 'hz_admin_enqueue_scripts' );
 
 remove_action( 'wp_head', 'rsd_link' );
 remove_action( 'wp_head', 'wp_generator' );
@@ -44,6 +45,11 @@ function hz_register_scripts() {
     wp_enqueue_script( 'hztheme-uikit-script', get_template_directory_uri() . '/node_modules/uikit/dist/js/uikit.min.js', array(), $theme_version, true );
     wp_enqueue_script( 'hztheme-uikit-icons-script', get_template_directory_uri() . '/node_modules/uikit/dist/js/uikit-icons.min.js', array(), $theme_version, true );
     wp_enqueue_script( 'hztheme-custom-script', get_template_directory_uri() . '/assets/js/scripts.js', array(), $theme_version, true );
+}
+
+function hz_admin_enqueue_scripts() {
+    wp_enqueue_media();
+    wp_enqueue_script( 'hz-admin-script', get_template_directory_uri() . '/assets/admin/js/admin.js', ['jquery'], null, true );
 }
 
 function hz_remove_extra_scripts() {
